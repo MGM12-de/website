@@ -1,7 +1,13 @@
 {
-  "name": "nuxt-ui-pro-template-saas",
+  "name": "mgm12-web",
   "private": true,
   "type": "module",
+  "author": {
+    "name": "Miguel",
+    "url": "https://github.com/miggi92"
+  },
+  "categories": ["Other"],
+  "homepage": "https://mgm12.dev",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",

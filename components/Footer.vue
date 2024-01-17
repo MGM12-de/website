@@ -7,9 +7,7 @@ const links = [{
     label: 'Docs'
   }, {
     label: 'Roadmap'
-  }, {
-    label: 'Changelog'
-  }]
+  },]
 }, {
   label: 'Features',
   children: [{
