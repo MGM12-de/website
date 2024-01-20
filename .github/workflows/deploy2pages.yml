@@ -69,7 +69,7 @@ jobs:
         run: npx nuxi generate
         env:
           NUXT_PUBLIC_STUDIO_API_URL: https://api.nuxt.studio
-          NUXT_PUBLIC_STUDIO_TOKENS:${{ variables.NUXT_PUBLIC_STUDIO_TOKENS }}
+          NUXT_PUBLIC_STUDIO_TOKENS: ${{ variables.NUXT_PUBLIC_STUDIO_TOKENS }}
           NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
 
       - name: Add .nojekyll file
