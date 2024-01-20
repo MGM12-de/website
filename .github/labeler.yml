@@ -1,0 +1,7 @@
+---
+# List of matching label rules
+enhancement:
+  - head-branch: ['feat', 'feature']
+
+bug:
+  - head-branch: ['fix', 'bugfix']
