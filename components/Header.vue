@@ -7,6 +7,9 @@ const links = [{
   label: 'Docs',
   to: '/docs'
 }, {
+  label: 'Pricing',
+  to: '/pricing'
+}, {
   label: 'Blog',
   to: '/blog'
 }]
@@ -15,13 +18,14 @@ const links = [{
 <template>
   <UHeader :links="links">
     <template #logo>
-      <Logo />
-      MGM12 <UBadge label=".dev" variant="subtle" class="mb-0.5" />
+      MGM12
+      <UBadge label=".dev" variant="subtle" class="mb-0.5" />
     </template>
 
     <template #right>
-      <UButton label="Log in" color="gray" to="/login" />
-      <UButton label="Sign up" icon="i-heroicons-arrow-right-20-solid" trailing color="black" to="/signup" class="hidden lg:flex" />
+      <UButton label="Sign in" color="gray" to="/login" />
+      <UButton label="Sign up" icon="i-heroicons-arrow-right-20-solid" trailing color="black" to="/signup"
+        class="hidden lg:flex" />
     </template>
 
     <template #panel>
