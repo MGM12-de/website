@@ -9,18 +9,13 @@ const links = [{
     to: '/docs'
   }]
 },
-// {
-//  label: 'Features',
-//  children: [{
-//    label: 'Affiliates'
-//  }, {
-//   label: 'Portal'
-//  }, {
-//    label: 'Jobs'
-//  }, {
-//    label: 'Sponsors'
-//  }]
-// }, 
+{
+  label: 'Features',
+  children: [{
+    label: 'Projects',
+    to: '/projects'
+  }]
+},
 {
   label: 'Company',
   children: [{
