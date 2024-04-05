@@ -1,3 +1,5 @@
+import { pwa } from "./config/pwa"
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: [process.env.NUXT_UI_PRO_PATH || '@nuxt/ui-pro'],
@@ -9,6 +11,7 @@ export default defineNuxtConfig({
     '@nuxthq/studio',
     '@vueuse/nuxt',
     'nuxt-og-image',
+    '@vite-pwa/nuxt'
   ],
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
@@ -27,5 +30,6 @@ export default defineNuxtConfig({
   },
   devtools: {
     enabled: true
-  }
+  },
+  pwa
 })

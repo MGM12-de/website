@@ -12,7 +12,9 @@
   "homepage": "https://mgm12.dev",
   "scripts": {
     "build": "nuxt build",
+    "build-sw": "SW=true nuxt build",
     "dev": "nuxt dev",
+    "dev-sw": "SW=true nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
@@ -34,8 +36,9 @@
   "devDependencies": {
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxthq/studio": "^1.0.13",
+    "@vite-pwa/assets-generator": "^0.2.4",
+    "@vite-pwa/nuxt": "^0.6.0",
     "eslint": "^8.57.0",
-    "vue-tsc": "^2.0.7",
-    "@vite-pwa/assets-generator": "^0.2.4"
+    "vue-tsc": "^2.0.7"
   }
 }

@@ -27,6 +27,7 @@ useSeoMeta({
 
 <template>
   <div>
+    <NuxtPwaManifest />
     <NuxtLoadingIndicator />
 
     <NuxtLayout>
