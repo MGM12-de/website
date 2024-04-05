@@ -20,4 +20,10 @@ hero:
       size: xl
       color: gray
       to: '/projects'
+    - label: Follow us on GitHub
+      icon: i-simple-icons-github
+      size: xl
+      color: gray
+      to: 'https://github.com/mgm12-de'
+      target: _blank
 
