@@ -34,7 +34,7 @@
     "nuxt-og-image": "^2.2.4"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.3.0",
+    "@nuxt/eslint-config": "^0.3.1",
     "@nuxthq/studio": "^1.0.13",
     "@vite-pwa/assets-generator": "^0.2.4",
     "@vite-pwa/nuxt": "^0.6.0",
