@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
+      NUXT_PUBLIC_STUDIO_API_URL: https://api.nuxt.studio
+      NUXT_PUBLIC_STUDIO_TOKENS: ${{ vars.NUXT_PUBLIC_STUDIO_TOKENS }}
     steps:
       - uses: actions/checkout@v4
       - run: corepack enable
