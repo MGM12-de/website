@@ -18,8 +18,9 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - MGM12',
-  ogSiteName: 'MGM12.dev',
+  titleTemplate: '%s - Nuxt UI Pro - SaaS template',
+  ogImage: 'https://saas-template.nuxt.dev/social-card.png',
+  twitterImage: 'https://saas-template.nuxt.dev/social-card.png',
   twitterCard: 'summary_large_image'
 })
 </script>
