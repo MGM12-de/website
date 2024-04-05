@@ -18,9 +18,9 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Nuxt UI Pro - SaaS template',
-  ogImage: 'https://saas-template.nuxt.dev/social-card.png',
-  twitterImage: 'https://saas-template.nuxt.dev/social-card.png',
+  titleTemplate: '%s - MGM12.dev',
+  ogImage: '~/logo/mgm12_twitch.jpg',
+  twitterImage: '~/logo/mgm12_twitch.jpg',
   twitterCard: 'summary_large_image'
 })
 </script>

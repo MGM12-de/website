@@ -18,3 +18,9 @@ authors:
 This is the first blog entry and is only for testing usage.
 
 Nothing really meaningful in this blog post.
+
+Picture by [Pixabay](https://pixabay.com/):
+
+```
+https://cdn.pixabay.com/photo/2018/04/07/08/28/notepad-3297994_1280.jpg
+```

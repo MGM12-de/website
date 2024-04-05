@@ -17,7 +17,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal public/logo/mgm12.png"
   },
   "dependencies": {
     "@iconify-json/heroicons": "^1.1.20",
@@ -34,6 +35,7 @@
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxthq/studio": "^1.0.13",
     "eslint": "^8.57.0",
-    "vue-tsc": "^2.0.7"
+    "vue-tsc": "^2.0.7",
+    "@vite-pwa/assets-generator": "^0.2.4"
   }
 }
