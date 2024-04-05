@@ -2,35 +2,33 @@
 const links = [{
   label: 'Resources',
   children: [{
-    label: 'Help center'
+    label: 'Help center',
+    to: '/help'
   }, {
-    label: 'Docs'
-  }, {
-    label: 'Roadmap'
-  }, {
-    label: 'Changelog'
+    label: 'Docs',
+    to: '/docs'
   }]
-}, {
-  label: 'Features',
-  children: [{
-    label: 'Affiliates'
-  }, {
-    label: 'Portal'
-  }, {
-    label: 'Jobs'
-  }, {
-    label: 'Sponsors'
-  }]
-}, {
+},
+// {
+//  label: 'Features',
+//  children: [{
+//    label: 'Affiliates'
+//  }, {
+//   label: 'Portal'
+//  }, {
+//    label: 'Jobs'
+//  }, {
+//    label: 'Sponsors'
+//  }]
+// }, 
+{
   label: 'Company',
   children: [{
-    label: 'About'
+    label: 'About',
+    to: '/about'
   }, {
-    label: 'Pricing'
-  }, {
-    label: 'Careers'
-  }, {
-    label: 'Blog'
+    label: 'Blog',
+    to: '/blog'
   }]
 }]
 
@@ -39,7 +37,7 @@ const toast = useToast()
 const email = ref('')
 const loading = ref(false)
 
-function onSubmit () {
+function onSubmit() {
   loading.value = true
 
   setTimeout(() => {
@@ -60,9 +58,12 @@ function onSubmit () {
         <template #right>
           <form @submit.prevent="onSubmit">
             <UFormGroup label="Subscribe to our newsletter" :ui="{ container: 'mt-3' }">
-              <UInput v-model="email" type="email" placeholder="Enter your email" :ui="{ icon: { trailing: { pointer: '' } } }" required size="xl" autocomplete="off" class="max-w-sm" input-class="rounded-full">
+              <UInput v-model="email" type="email" placeholder="Enter your email"
+                :ui="{ icon: { trailing: { pointer: '' } } }" required size="xl" autocomplete="off" class="max-w-sm"
+                input-class="rounded-full">
                 <template #trailing>
-                  <UButton type="submit" size="xs" color="primary" :label="loading ? 'Subscribing' : 'Subscribe'" :loading="loading" />
+                  <UButton type="submit" size="xs" color="primary" :label="loading ? 'Subscribing' : 'Subscribe'"
+                    :loading="loading" />
                 </template>
               </UInput>
             </UFormGroup>
@@ -73,14 +74,15 @@ function onSubmit () {
 
     <template #left>
       <p class="text-gray-500 dark:text-gray-400 text-sm">
-        Copyright © {{ new Date().getFullYear() }}. All rights reserved.
+        Copyright © 2023 - {{ new Date().getFullYear() }}. All rights reserved.
       </p>
     </template>
 
     <template #right>
       <UColorModeButton size="sm" />
 
-      <UButton to="https://github.com/nuxt-ui-pro/saas" target="_blank" icon="i-simple-icons-github" aria-label="GitHub" color="gray" variant="ghost" />
+      <UButton to="https://github.com/mgm12-de" target="_blank" icon="i-simple-icons-github" aria-label="GitHub"
+        color="gray" variant="ghost" />
     </template>
   </UFooter>
 </template>
