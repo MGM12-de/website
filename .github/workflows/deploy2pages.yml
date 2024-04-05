@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
-      NUXT_PUBLIC_STUDIO_API_URL: https://api.nuxt.studio
-      NUXT_PUBLIC_STUDIO_TOKENS: ${{ vars.NUXT_PUBLIC_STUDIO_TOKENS }}
     steps:
       - uses: actions/checkout@v4
       - run: corepack enable
@@ -27,6 +25,9 @@ jobs:
           path: ./.output/public
   # Deployment job
   deploy:
+    env:
+      NUXT_PUBLIC_STUDIO_API_URL: https://api.nuxt.studio
+      NUXT_PUBLIC_STUDIO_TOKENS: ${{ vars.NUXT_PUBLIC_STUDIO_TOKENS }}
     # Add a dependency to the build job
     needs: build
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
