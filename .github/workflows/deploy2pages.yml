@@ -18,6 +18,8 @@ jobs:
           node-version: '20'
       # Pick your own package manager and build script
       - run: pnpm install
+      - name: Create .nuxtrc
+        run: echo $'\nautoImport=true\nmodules[]=@nuxthq/studio' >> .nuxtrc
       - run: pnpm run build --preset=github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
