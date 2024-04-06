@@ -19,8 +19,8 @@ useHead({
 
 useSeoMeta({
   titleTemplate: '%s - MGM12.dev',
-  ogImage: '/logo/mgm12_twitch.jpg',
-  twitterImage: '/logo/mgm12_twitch.jpg',
+  ogImage: 'logo/mgm12_twitch.jpg',
+  twitterImage: 'logo/mgm12_twitch.jpg',
   twitterCard: 'summary_large_image'
 })
 </script>
