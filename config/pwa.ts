@@ -11,6 +11,15 @@ export const pwa: ModuleOptions = {
         background_color: "#ffffff",
         start_url: "/",
         lang: "en",
+        shortcuts: [
+            {
+                name: "Blog",
+                url: "/blog",
+                description: "Blog posts",
+                short_name: "Blog",
+                icons: [{ src: "/icons/mdi_feed.png", sizes: "192x192" }],
+            },
+        ],
         icons: [
             {
                 src: "logo/pwa-64x64.png",
