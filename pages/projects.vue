@@ -14,7 +14,11 @@ const projects = [{
   description: 'Handball statistics website',
   to: 'https://haste.mgm12.dev',
   icon: 'i-heroicons-presentation-chart-line'
-}]
+}, {
+  title: 'Handball checks',
+  description: 'Website to get more info from the handball website',
+  to: 'https://handball-checks.mgm12.dev/',
+  icon: 'i-heroicons-presentation-chart-line' }]
 
 useSeoMeta({
   title: page.value.title,
