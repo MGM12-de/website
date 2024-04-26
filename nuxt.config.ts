@@ -27,10 +27,14 @@ export default defineNuxtConfig({
   routeRules: {
     '/api/search.json': { prerender: true },
     '/docs': { redirect: '/docs/getting-started', prerender: false },
-    '/docs/**' : { prerender: false }
+    '/docs/**': { prerender: false }
   },
   devtools: {
     enabled: true
+  },
+  site: {
+    url: 'https://mgm12.dev',
+    name: 'MGM12.dev',
   },
   pwa
 })
