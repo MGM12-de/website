@@ -23,8 +23,8 @@
     "generate-pwa-assets": "pwa-assets-generator --preset minimal public/logo/mgm12.png"
   },
   "dependencies": {
-    "@iconify-json/heroicons": "^1.1.20",
-    "@iconify-json/simple-icons": "^1.1.100",
+    "@iconify-json/heroicons": "^1.1.21",
+    "@iconify-json/simple-icons": "^1.1.101",
     "@nuxt/content": "^2.12.1",
     "@nuxt/fonts": "^0.6.1",
     "@nuxt/image": "^1.6.0",
